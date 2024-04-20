@@ -1,0 +1,215 @@
+/* Default styles */
+
+header {
+  background-color: yellow;
+  color: #fa3b3b;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.sidebar {
+  width: 220px;
+  height: auto;
+  background-color: rgb(231, 160, 208);
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar ul li a.active {
+  font-weight: bold;
+  color: blue;
+}
+
+.content {
+  padding: 100px;
+  box-sizing: border-box;
+  color: blue;
+  background-color: rgb(82, 212, 206);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 18px;
+}
+
+footer {
+  background-color: #584b4b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  margin-top: 5px;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  width: 800px;
+  border: 2px solid rgb(142, 184, 231);
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  margin-left: 370px;
+  border: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.sidebar i {
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button[type="delete"] {
+  padding: 3px 18px;
+  background-color: #f83f3f;
+  color: white;
+  margin-left: 10px;
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for small screens */
+
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+
+  input[type="date"],
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for extra small screens */
+
+  header,
+  footer,
+  .sidebar,
+  .content {
+    padding: 10px;
+  }
+
+  input[type="date"],
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+  }
+}
+
+
+.container {
+  max-width: 600px;
+  margin-bottom: 5px;
+  height: auto;
+  background-color: rgb(55, 165, 123);
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Style for the form input fields */
+input[type="date"] {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Style for the form submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 2px;
+  background-color: #ffc107;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Style for the form submit button on hover */
+input[type="submit"]:hover {
+  background-color: #ff9800;
+}
+
+/* Style for the form rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  input[type="date"] {
+    margin-bottom: 0;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+}
+
+
